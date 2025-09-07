@@ -1,0 +1,57 @@
+.edit-profile-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Big card for desktop */
+.edit-profile-card {
+  width: 100%;
+  max-width: 900px; /* Large width for desktop */
+  border-radius: 20px;
+}
+
+/* Tablet & Mobile Mode - Allow scrolling if needed */
+@media (max-width: 991px) {
+  .edit-profile-container {
+    align-items: flex-start;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.edit-profile-container {
+  padding: 1rem;
+}
+
+/* Desktop mode: center card */
+@media (min-width: 992px) {
+  .edit-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  .edit-profile-card {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+/* Tablet & Mobile: full width, no card look */
+@media (max-width: 991px) {
+  .edit-profile-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,45 @@
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1507502707541-f369a3b1852f") no-repeat center center/cover;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out, background 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+
+
+
+

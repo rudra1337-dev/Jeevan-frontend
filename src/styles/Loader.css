@@ -1,0 +1,73 @@
+.microchip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* SVG responsiveness */
+.microchip-svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Chip body styling */
+.chip-body {
+  fill: #333;
+  stroke: #555;
+  stroke-width: 2;
+  animation: glow 2s infinite alternate;
+}
+
+/* Pin styling */
+.chip-pin {
+  fill: #888;
+  animation: pulse 1.5s infinite alternate;
+}
+
+/* Glow effect animation */
+@keyframes glow {
+  from {
+    fill: #333;
+    stroke: #777;
+  }
+  to {
+    fill: #444;
+    stroke: #ff4444;
+  }
+}
+
+/* Pin pulse animation */
+@keyframes pulse {
+  from {
+    fill: #888;
+  }
+  to {
+    fill: #ff0000;
+  }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1200px) {
+  .microchip-svg {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .microchip-svg {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .microchip-svg {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .microchip-svg {
+    width: 90%;
+  }
+}

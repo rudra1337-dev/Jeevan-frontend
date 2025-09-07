@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+.signup-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffeded, #ffe8e8);
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border-radius: 15px;
+  border: 2px solid #dc3545 !important;
+}
+
+h2 {
+  font-family: 'Arial Black', sans-serif;
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b30000 !important;
+}
+
+.invalid-feedback {
+  font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+/* Desktop view → Card with shadow */
+@media (min-width: 992px) {
+  .signup-wrapper {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 2px solid #dc3545;
+  }
+}
+
+/* Tablet/Mobile → No card */
+@media (max-width: 991px) {
+  .signup-wrapper {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}
